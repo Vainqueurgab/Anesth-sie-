@@ -4,9 +4,9 @@ const fs = require('fs');
 const request = require('request');
 
 module.exports.config = {
-  name: "randomReact",
+  name: "Oliver gab",
   version: "69",
-  credits: "Aesther",
+  credits: "Arse",
 };
 
 module.exports.handleEvent = async function ({ api, event }) {
