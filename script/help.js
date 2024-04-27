@@ -91,8 +91,8 @@ module.exports.handleEvent = async function({
     messageID,
     body
   } = event;
-  const message = prefix ? '🪐𝗣𝗥𝗘𝗙𝗜𝗫.   ☢\n━━━━━━━━━\n🌐 System prefix: ' ,
-🛸 Your box chat prefix: ' + prefix : "𝙎𝙊𝙍𝙍𝙔...𝗖𝗼𝗻𝘁𝗮𝗰𝘁https://www.facebook.com/profile.php?id=61555963733226 ♡\n━━━━━━━━━━━\nI don't have 𝚊 𝗣𝗥𝗘𝗙𝗜𝗫";
+  const message = prefix ? '🪐𝗣𝗥𝗘𝗙𝗜𝗫.   💫\n━━━━━━━━━\n
+🛸 Your box chat prefix: ' + prefix : "𝗚𝗮𝘀.... ♡\n━━━━━━━━━━━\nI don't have 𝚊 𝗣𝗥𝗘𝗙𝗜𝗫";
   if (body?.toLowerCase().startsWith('prefix')) {
     api.sendMessage(message, threadID, messageID);
   }
