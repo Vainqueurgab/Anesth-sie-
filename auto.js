@@ -313,11 +313,11 @@ async function accountLogin(state, enableCommands = [], prefix, admin = []) {
             }
           }
           if (event.body && !command && event.body?.toLowerCase().startsWith(prefix.toLowerCase())) {
-            api.sendMessage(`〉 [${prefix}help📑] to see 𝗔𝗟𝗟 avalable 𝗖𝗠𝗗𝘴\n--------------------------------------\n☢ 𝙶𝙰𝙱 ☢`, event.threadID, event.messageID);
+            api.sendMessage(`〉 [${prefix}help🚬 𝚙𝚘𝚞𝚛 𝚟𝚘𝚒𝚛 𝚖𝚎𝚜  𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜\n--------------------------------------\n 𝚌𝚘𝚗𝚝𝚊𝚌𝚝 𝚖𝚘𝚗 ☢ 𝙶𝙰𝙱 ☢`, event.threadID, event.messageID);
             return;
           }
           if (event.body && command && prefix && event.body?.toLowerCase().startsWith(prefix.toLowerCase()) && !aliases(command)?.name) {
-            api.sendMessage(`🔴-[${command}] 𝗗oesn't 𝗘𝗫𝗜𝗦𝗧⚫\n〉 [${prefix}help📑] to see all 𝗖𝗠𝗗𝘴\n--------------------------------------\n☢ 𝙶𝙰𝙱 ☢`, event.threadID, event.messageID);
+            api.sendMessage(`-[${command}] 𝙳𝚎𝚜𝚘𝚕𝚎 𝚌𝚎 𝚌𝚖𝚍 𝚗'𝚎𝚡𝚒𝚜𝚝𝚎 𝚙𝚊𝚜\n〉 [${prefix}help🪐𝚙𝚘𝚞𝚛 𝚟𝚘𝚒𝚛 𝚖𝚎𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜\n--------------------------------------\n𝚌𝚘𝚗𝚝𝚊𝚌𝚝𝚎 𝚖𝚘𝚗 𝚌𝚛𝚎𝚊𝚝𝚎𝚞𝚛 ☢ 𝙶𝙰𝙱 ☢`, event.threadID, event.messageID);
             return;
           }
           for (const {
